@@ -1,0 +1,139 @@
+\documentclass{article} 
+    \usepackage[utf8]{inputenc}
+    \usepackage{titlesec}
+    \usepackage{geometry}
+    \usepackage{titling}
+    \usepackage[table]{xcolor}
+    \usepackage{hyperref}
+
+    
+    \titleformat{\section}{\huge\bfseries}{}{0em}{}[\titlerule]
+    \titleformat{\subsection}{\bfseries\Large}{}{0em}{}
+    \titleformat{\subsubsection}[runin]{\bfseries}{}{0em}{}
+
+	\geometry{
+         letterpaper,
+         left=.5in,
+         top=.5in,
+         bottom=.5in,
+         right=.5in
+    }
+    	\hypersetup{
+        colorlinks=true,
+        linkcolor=blue,
+        urlcolor=cyan,
+        pdfpagemode=FullScreen,
+    }
+    
+    \author{Rabeeh Abou Ismail}
+    \renewcommand{\maketitle} {
+	    \begin{center}
+    		{\huge\bfseries\theauthor} \\
+    		{Edtech Software Engineer} \\
+    		+39 338 771 5868 |
+	    rabeeh.abouismail@gmail.com | 
+	    \href{https://github.com/Rabeehai}{GitHub} | 
+	    \href{https://www.linkedin.com/in/rabeeh-abou-ismael-1b569995/}{LinkedIn}
+	    \vspace{.25em}
+	    \end{center}
+	}
+	
+    \newcommand{\jobdate}[7]{
+		\textbf{#1}: [ #2-#3|#4-#5 ] (#6, #7)
+  	}
+  
+  	\newcommand{\projectinfo}[3]{
+  		\textbf{#1}&#2&#3\\
+  	}
+	
+\begin{document}
+
+\maketitle
+
+\section{Education}
+\subsection{American University of Beirut}
+	\jobdate{Masters Computer Science}{2012}{06}{2015}{06}{Bierut}{Lebanon}\\
+	\jobdate{Bachelors Computer Science}{2009}{06}{2012}{06}{Bierut}{Lebanon}
+\section{Experience}
+\subsection{Media Solutions}
+    \textbf{2017-Current}
+    \textit{Senior Software Developer}
+    \begin{itemize}
+	    \item Develop and maintain software applications using java, python, mySQL, HTML, CSS. 
+	    \item Design and implement software solutions to meet customer requirements. 
+	    \item Collaborate with other developers to create efficient and effective software solutions.
+	    \item Participate in code reviews and provide feedback.
+    		\item Follow established coding standards and best practices.
+    \end{itemize}
+    
+\subsection{Phoenicia University}
+    \textbf{2018-2020}
+    \textit{University lecturer}
+    \begin{itemize}
+	    \item Taught Courses with over 60 students, shifted between informal and formal methods of teaching to create multi-layered web of learning, incorporating experiments, practical and theoretical activities, discussions and projects into lessons.
+    		\subsubsection{Courses Taught}
+	    \begin{itemize}
+		    \item \textbf{INTRO TO ALGORITHMS AND DATA STRUCTURES and INTRO TO PROGRAMMING}\\Programming with Java and Python to teach students how to think and optimize code, explaining algorithms, space and time complexity and data structures.
+		    \item \textbf{WEB PROGRAMMING, WEB DESIGN}\\Taught dynamic web pages for client-side frameworks using HTML,CSS, JavaScript. how to create a basic scalable and fluid website, setting up and configuring a web server using PHP, SQL, JQuery, XML, DOM objects, AJAX, JSON, on WAMP server and NGINX.
+		    \item \textbf{INTRO TO COMPUTING}\\Taught word processing, spreadsheets application, presentation software and database systems using Microsoft Word, PowerPoint, Access, Excel, VBA, and SQL.
+    \end{itemize}
+    \end{itemize}
+    
+\subsection{Media Solutions}
+    \textbf{2015-2016}
+    \textit{Junior Software Developer}
+    \begin{itemize}
+	    \item Develop and maintain software applications using java and python.
+	    \item Retrieved data from various sources using requests library.
+	    \item Retrieved and organized data for analysis using libraries such as NumPy, pandas, matplotlib, requests.
+	    \item Troubleshoot and debug software applications.
+    \end{itemize}
+  
+\subsection{American University of Beirut}
+    \textbf{2013-2015}
+    \textit{Teachers Assistant, Graduate Assistant}
+    \begin{itemize}
+	    \item Held classes of 30 to 60 students, explained material not covered in depth in class and gave lab sessions for practical exercises, Created lesson materials, visuals and digital presentations to supplement lesson plans for courses such as Intermediate Programming and Data Structures, Algorithm Analysis, Introduction to computers.
+	    \item Graded assignments/projects and liaised between faculty and students to answer questions and optimize faculty time.
+    \end{itemize}
+    
+\subsection{American University of Beirut}
+    \textbf{2010-2011}
+    \textit{Web Development and Database Management}
+    \begin{itemize}
+	    \item Troubleshot, added and debugged code on the university website ensuring compatibility with 	devices, browsers, and operating systems.
+	    \item Placed data on emails, forms and paper, in a unified database.
+	    \item Designing, Creating and handling forms, tables, for data entry in MS Access.
+	    \item Automating some data retrieval from various sources and unifying their format then appending them to the Data Base.
+    \end{itemize}
+
+\section{Project}
+	\rowcolors{1}{gray!25}{white}
+	\begin{tabular}{m{0.15\linewidth}  m{0.05\linewidth}  m{0.73\linewidth}}
+	\projectinfo{BitBot}{2021}
+        {an online futures trader bot that buys and sells crypto contracts using prespecified strategies. Implemented using python using the BitMEX API (BitMEX is a cryptocurrency exchange and derivative trading platform)}
+	\projectinfo{Castle Wars}{2021}
+        {a complete 2D 2 player tower defense game with buildable units and 2d animation}
+	\projectinfo{LIV}{2020}
+        {a 2D top-down bullet-hell game in a Sci-Fi setting where you control a spaceship and shoot at enemies | Developed using GML on Game Maker Studio}
+	\projectinfo{Master’s Thesis}{2015}
+        {Thesis	Specification construction using equivalence relations and SMT solvers | Developed using C++ on Linux}
+	\projectinfo{COOL compiler}{2013}
+        {a compiler for Classroom Object Oriented Language | developed using JAVA}
+	\projectinfo{Visual Interactive Simulation}{2012}
+        {an educational 3D environment that explains through text and visual animations and mini puzzles some biological concepts about RNAs. | Developed using C++ OpenGL on Windows}
+	\projectinfo{GLBunny}{2011}
+        {3D avatar that moves around a maze environment that can shoot fireballs using particle physics with a health bar and enemies to shoot | Developed using C++ OpenGL on Windows}
+	\projectinfo{BASIC BANK}{2010}
+        {a basic banking system with user accounts balance management and different account types | Developed using JAVA utilizing OOP features such as inheritance, interfaces and abstract classes}
+    \end{tabular}
+    
+\section{Skills}
+Multicultural teacher and software engineer, Experienced with Object Oriented Programming and Spreadsheet Analysis, passionate about teaching, developing and working with other people. I strive to learn from more experienced developers.
+\\\textbf{Programming:} Python, Java, HTML, CSS, VBA, mySQL, GML, C++, JavaScript, PHP, OpenGL, SPARQL, Z3 Syntax (SMT), OWL
+\\\textbf{Theory:} Data Structures, OOP, Algorithm Analysis, FOL,Formal Logic (SPARQL, SMT, Z3, OWL)
+\\\textbf{Knowledge:} Git, windows, Linux, GameMaker Studio, Autodesk Maya, Microsoft Excel, Access, PowerPoint and Word, Knowledge Representation and Reasoning.
+\\\textbf{Spoken Languages:} English, Arabic.
+
+
+\end{document}
